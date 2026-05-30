@@ -24,7 +24,54 @@
 <section class="section"><div class="wrap"><div class="head center"><h2>Accountability Engine.</h2><p class="lead">MAP does not only track activity. It identifies execution risk early and pushes builders toward recovery.</p></div><div class="status"><div class="card"><h3 class="warning">Warning</h3><p class="muted">Missed 1 week. Review workload and recommit.</p></div><div class="card"><h3 class="risk">At Risk</h3><p class="muted">Missed 2 weeks. Focus on the highest-priority milestone.</p></div><div class="card"><h3>Recovery Plan</h3><p class="muted">Missed 3 weeks. Reduce workload and rebuild momentum.</p></div><div class="card"><h3 class="critical">Critical</h3><p class="muted">Missed 4 weeks. Project progress may be stalled.</p></div></div></div></section>
 <section class="section"><div class="wrap grid"><div><div class="head"><h2>Public Builder Profiles.</h2><p class="lead">Builders can share a public execution profile showing score, milestone progress, streaks, updates, achievements, and social links.</p></div><a class="btn secondary" href="#pilot">Create Pilot Profile</a></div><div class="panel"><div class="mini-top"><div><span class="tag">Public Profile</span><h3>Sarah Chen</h3></div><span class="pill">88/100</span></div><p class="muted">Project: CrossChain Payments</p><br><div class="bar"><div class="fill" style="--w:72%"></div></div><br><div class="timeline"><div class="time"><strong>May 5</strong><span>MVP launched</span></div><div class="time"><strong>May 12</strong><span>Milestone completed</span></div><div class="time"><strong>May 18</strong><span>Community update published</span></div></div></div></div></section>
 <section class="section"><div class="wrap grid"><div class="panel"><span class="tag">Ecosystem Dashboard</span><h3>Execution Health</h3><br><div class="metric-grid" style="grid-template-columns:1fr 1fr"><div class="metric"><b>42</b><span class="muted">Active Builders</span></div><div class="metric"><b>78%</b><span class="muted">Avg Completion</span></div><div class="metric"><b>6</b><span class="muted">At Risk</span></div><div class="metric"><b>28</b><span class="muted">Milestones Done</span></div></div></div><div><div class="head"><h2>For ecosystems, DAOs, grants, and accelerators.</h2><p class="lead">MAP helps communities identify, support, and reward builders who consistently deliver meaningful work.</p></div><ul class="muted" style="padding-left:20px"><li>Track active builders</li><li>Flag execution risk</li><li>Monitor milestone completion</li><li>Export progress reports</li></ul></div></div></section>
-<section id="pilot" class="section"><div class="wrap panel"><div class="head center"><h2>Join the Builder Pilot.</h2><p class="lead">Apply if you are actively building something and want a simple system for priorities, accountability, and measurable execution.</p></div><form class="form" onsubmit="event.preventDefault(); alert('Pilot application captured. Connect this form to Tally, Supabase, Zoho, or n8n next.');"><input required placeholder="Name"><input required type="email" placeholder="Email"><input placeholder="Project name"><select><option>Project stage</option><option>Idea</option><option>Prototype</option><option>Testing</option><option>Launch</option></select><input placeholder="Website or demo link"><input placeholder="Current milestone"><textarea placeholder="Biggest execution challenge"></textarea><button class="btn primary" type="submit">Apply to Join the Pilot</button></form></div></section>
+<section id="pilot" class="section">
+  <div class="wrap panel">
+
+```
+<div class="head center">
+  <h2>Join the Builder Pilot.</h2>
+
+  <p class="lead">
+    MAP helps builders turn milestones into measurable execution.
+    Apply if you're actively building and want more clarity,
+    accountability, and consistency.
+  </p>
+</div>
+
+<iframe
+  data-tally-src="https://tally.so/r/ZjDlRA"
+  loading="lazy"
+  width="100%"
+  height="1400"
+  frameborder="0"
+  marginheight="0"
+  marginwidth="0"
+  title="MAP Builder Pilot Application">
+</iframe>
+```
+
+  </div>
+</section>
+
+<script>
+var d=document,w="https://tally.so/widgets/embed.js",v=function(){
+if(typeof Tally!=="undefined"){Tally.loadEmbeds();}
+else{
+d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){
+e.src=e.dataset.tallySrc;
+});
+}
+};
+if(typeof Tally!=="undefined"){v();}
+else if(d.querySelector('script[src="'+w+'"]')==null){
+var s=d.createElement("script");
+s.src=w;
+s.onload=v;
+s.onerror=v;
+d.body.appendChild(s);
+}
+</script>
+
 </main>
 
 <footer class="footer"><div class="wrap foot"><div><strong>MAP Builder OS</strong><div class="small">Execution intelligence for builders, creators, and ecosystems.</div></div><div class="small"><a href="index.html">Home</a> · <a href="builders.html">Builders</a> · <a href="https://substack.com/@datafrank" target="_blank" rel="noopener">Data Frank</a></div></div></footer>
